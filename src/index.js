@@ -4,6 +4,8 @@ import './index.css';
 import * as serviceWorker from './serviceWorker';
 import Dashboard from './components/dashboard.component';
 
+import store from './store';
+
 ReactDOM.render(
   <Dashboard
     catToAdopt={{
