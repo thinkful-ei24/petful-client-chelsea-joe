@@ -14,19 +14,71 @@ class Dashboard extends React.Component {
 
   render() {
     return (
-      <section>
-        <h1>Adopt an animal</h1>
-        <h2>Cat</h2>
-        <Pet
-          petToAdopt={this.props.catToAdopt}
-          onAdoptPet={() => this.props.dispatch(petActions.adoptCat())}
-        />
-        <h2>Dog</h2>
-        <Pet
-          petToAdopt={this.props.dogToAdopt}
-          onAdoptPet={() => this.props.dispatch(petActions.adoptDog())}
-        />
-      </section>
+      <React.Fragment>
+        <section className="banner-container">
+          <main className="banner" role="main">
+            <div className="pup-animation" alt="an animated puppy">
+              <div class="dog">
+                <div class="dog-body">
+                  <div class="dog-tail">
+                    <div class="dog-tail">
+                      <div class="dog-tail">
+                        <div class="dog-tail">
+                          <div class="dog-tail">
+                            <div class="dog-tail">
+                              <div class="dog-tail">
+                                <div class="dog-tail" />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="dog-torso" />
+                <div class="dog-head">
+                  <div class="dog-ears">
+                    <div class="dog-ear" />
+                    <div class="dog-ear" />
+                  </div>
+                  <div class="dog-eyes">
+                    <div class="dog-eye" />
+                    <div class="dog-eye" />
+                  </div>
+                  <div class="dog-muzzle">
+                    <div class="dog-tongue" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="banner-copy">
+              <h1>Adopt a Cutie!</h1>
+              <p>
+                All of these babies need homes. Below are the two who have been
+                hanging out with us the longest and would really love to join
+                your family.
+              </p>
+            </div>
+          </main>
+        </section>
+        <section className="pet-container">
+          <div className="cat-box">
+            <h2>This kitty is all yours</h2>
+            <Pet
+              petToAdopt={this.props.catToAdopt}
+              onAdoptPet={() => this.props.dispatch(petActions.adoptCat())}
+            />
+          </div>
+          <div className="dog-box">
+            <h2>This is your Doggo</h2>
+            <Pet
+              petToAdopt={this.props.dogToAdopt}
+              onAdoptPet={() => this.props.dispatch(petActions.adoptDog())}
+            />
+          </div>
+        </section>
+      </React.Fragment>
     );
   }
 }
