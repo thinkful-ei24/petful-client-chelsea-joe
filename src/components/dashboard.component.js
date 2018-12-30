@@ -53,11 +53,9 @@ class Dashboard extends React.Component {
               </div>
             </div>
             <div className="banner-copy">
-              <h1>Adopt a Cutie!</h1>
+              <h1>Petdrop, adopt a cutie!</h1>
               <p>
-                All of these babies need homes. Below are the two who have been
-                hanging out with us the longest and would really love to join
-                your family.
+                All of these babies need homes. Below are different cats and dogs in need of homes, all across the United States!
               </p>
             </div>
           </main>

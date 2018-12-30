@@ -75,6 +75,7 @@ button {
 
 section.banner-container {
   color: #000;
+  height: 100vh;
   padding: 60px 20px;
   background: url('./img/banner-bg.png') no-repeat center center fixed;
   -webkit-background-size: cover;
