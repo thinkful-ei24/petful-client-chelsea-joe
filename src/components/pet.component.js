@@ -9,6 +9,7 @@ const Pet = props => {
       <header role="banner">
         <h3>{props.petToAdopt.name}</h3>
         <img
+          className="pet-image"
           src={props.petToAdopt.imageURL}
           alt={props.petToAdopt.imageDescription}
         />
@@ -25,7 +26,7 @@ const Pet = props => {
             <span>Breed:</span> {props.petToAdopt.breed}
           </li>
           <li>
-            <span>Story:</span> {props.petToAdopt.story}
+            <span>Story:</span> <p>{props.petToAdopt.story}</p>
           </li>
         </dl>
         <button onClick={() => props.onAdoptPet()}>Next Pet!</button>

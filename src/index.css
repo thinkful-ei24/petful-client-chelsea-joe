@@ -640,3 +640,8 @@ div.pet-info dl li span {
     align-self: flex-start;
   }
 }
+
+.pet-image {
+  max-width: 30rem;
+  max-height: 30rem;
+}
