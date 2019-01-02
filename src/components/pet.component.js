@@ -28,7 +28,7 @@ const Pet = props => {
             <span>Story:</span> {props.petToAdopt.story}
           </li>
         </dl>
-        <button onClick={() => props.onAdoptPet()}>Adopt!</button>
+        <button onClick={() => props.onAdoptPet()}>Next Pet!</button>
       </main>
     </div>
   );
