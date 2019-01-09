@@ -645,3 +645,15 @@ div.pet-info dl li span {
   max-width: 30rem;
   max-height: 30rem;
 }
+
+.pet-info p {
+  max-height: 400px;
+  width: 300px;
+  overflow: scroll;
+}
+
+@media only screen and (max-width: 724px) {
+  .pet-info p {
+    margin: 0 auto;
+  }
+}
