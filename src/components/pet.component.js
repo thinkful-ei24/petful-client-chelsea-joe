@@ -2,7 +2,7 @@ import React from 'react';
 
 const Pet = props => {
   if (!props.petToAdopt) {
-    return <h3>No data yet!</h3>;
+    return <h3>Loading...</h3>;
   }
   return (
     <div className="pet-info" aria-live="polite">
